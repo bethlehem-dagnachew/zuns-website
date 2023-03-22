@@ -7,16 +7,22 @@ import { FooterModule } from './modules/footer/footer.module';
 import { LandingModule } from './modules/landing/landing.module';
 import { NavbarModule } from './modules/navbar/navbar.module';
 
+import { ProductsModule } from './modules/products/products.module';
+import { ServicesModule } from './modules/services/services.module';
+
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     NavbarModule,
     FooterModule,
-    LandingModule
+    LandingModule,
+    ProductsModule,
+    ServicesModule
   ],
   providers: [],
   bootstrap: [AppComponent]
