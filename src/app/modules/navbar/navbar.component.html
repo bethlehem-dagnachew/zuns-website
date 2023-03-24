@@ -1,23 +1,47 @@
-<div class="sticky top-0 z-50 bg-white flex justify-around  h-22 py-8 px-1 w-screen ">
-    <div class="logo  -ml-10 mt-2">
+<div
+    class="sticky top-0 z-50 bg-white flex justify-between px-4 sm:justify-around items-center h-22 py-8 sm:px-1 w-screen">
+    <div class="logo  sm:-ml-10 mt-2">
 
-        <div class="flex">
+        <div class="flex items-center">
             <img src="assets/circle.svg" class="mr-4" height="25" width="25" alt="">
             <span>Zuns group</span>
 
         </div>
     </div>
+    <div class="sm:hidden">
+        <button (click)="toggleNav()">Menu</button>
+    </div>
 
-    <div class="links space-x-5  mt-2 ">
+    <div class="links space-x-5 mt-2 hidden sm:block">
         <a class="hover:text-[#891FF2]" href="#landing">Home</a>
         <a class="hover:text-[#891FF2]" href="#service">Services</a>
         <a class="hover:text-[#891FF2]" href="#about">About</a>
         <a class="hover:text-[#891FF2]" href="#product">Products</a>
-
-
     </div>
 
-    <div class="">
-        <button class="bg-0-khakis bg-purple-200  text-black rounded-2xl p-2 px-4">Contact us </button>
+
+    <div class="bg-gray-800/40 fixed top-0 left-0 w-screen h-screen sm:hidden" (click)="toggleNav()"
+        *ngIf="showMobileNav"></div>
+
+    <div id="mobile-nav" class="bg-white w-[70vw] pt-4 pb-12 px-2 h-screen shadow-sm fixed right-0 top-0 sm:hidden"
+        *ngIf="showMobileNav">
+        <span class="flex justify-between mb-12">
+            <p class="font-bold text-gray-800">Menu</p>
+            <button (click)="toggleNav()">back</button>
+        </span>
+        <section class="flex flex-col h-full justify-between">
+            <div class="links flex flex-col gap-3">
+                <a class="nav-btn-mobile hover:text-[#891FF2]" href="#landing" (click)="toggleNav()">Home</a>
+                <a class="nav-btn-mobile hover:text-[#891FF2]" href="#service" (click)="toggleNav()">Services</a>
+                <a class="nav-btn-mobile hover:text-[#891FF2]" href="#about" (click)="toggleNav()">About</a>
+                <a class="nav-btn-mobile hover:text-[#891FF2]" href="#product" (click)="toggleNav()">Products</a>
+            </div>
+            <button class="bg-0-khakis bg-purple-200 text-black rounded-2xl p-2 px-4">Contact us</button>
+        </section>
+    </div>
+
+
+    <div class="hidden sm:block">
+        <button class="bg-0-khakis bg-purple-200 text-black rounded-2xl p-2 px-4">Contact us</button>
     </div>
 </div>

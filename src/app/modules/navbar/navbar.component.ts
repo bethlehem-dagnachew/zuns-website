@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./navbar.component.scss']
 })
 export class NavbarComponent {
+  showMobileNav: boolean = false;
 
+  toggleNav() {
+    this.showMobileNav = !this.showMobileNav;
+  }
 }
