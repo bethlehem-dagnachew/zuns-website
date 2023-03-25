@@ -9,6 +9,7 @@ import { Service } from 'src/app/services/detail.service';
 export class ServicesComponent implements OnInit {
 
   @Input() services: Service[] = []
+  
 
   constructor() { }
 

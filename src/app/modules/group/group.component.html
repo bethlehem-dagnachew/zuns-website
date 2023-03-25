@@ -8,7 +8,8 @@
         </div>
         <div class="carousel-item">
             <img class="h-48 w-48" src="assets/l3.jfif" alt="Burger" /> -->
- <div class="font-bold w-72 text-center mx-auto ">
+ 
+            <div class="font-bold w-72 text-center mx-auto ">
     
         <div class=" divider before:h-0.5 text-2xl after:h-0.5 text-wine mb-10 before:bg-wine after:bg-wine">
             Our Groups
@@ -21,10 +22,7 @@
         <div class="carousel-item mr-4 cursor-pointer" *ngFor="let company of companies" (click)="detail(company.id)">
             <app-logo-card [image]="company.image" [name]="company.name"> </app-logo-card>
         </div>
-
-
     </div>
-
 </div>
 
 <!-- <p>services works!</p> -->
