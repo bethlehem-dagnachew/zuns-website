@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { DetailService, Product, Service } from 'src/app/services/detail.service';
+import { DetailService, Landing, Product, Service } from 'src/app/services/detail.service';
 
 @Component({
   selector: 'app-group',
@@ -30,6 +30,8 @@ export interface Company {
   id: number;
   name: string;
   image: string;
+  landing?: Landing[]
   services: Service[]
   products: Product[]
 }
+  
