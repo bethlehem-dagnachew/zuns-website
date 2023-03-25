@@ -44,7 +44,7 @@ export class DetailService {
       id: 2,
       color: '#ffd700',
       name: 'Shire Shanghai Industrial and Trading PLC',
-      image: 'assets/l2.jfif',
+      image: 'assets/l4.jpeg',
       landing:
       {
         name: 'Shire Shanghai Industrial and Trading PLC',

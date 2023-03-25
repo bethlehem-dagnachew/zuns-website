@@ -7,7 +7,7 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class LandingComponent implements OnInit {
 
-  @Input() landingText: string = 'Zunsgroup';
+  @Input() landingText: string = 'Zuns Business Group';
   @Input() color: string = 'greenwood';
   @Input() description: string = `Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut
   consequatur
