@@ -9,8 +9,16 @@ export class DetailService {
   companies: Company[] = [
     {
       id: 1,
+      
       name: 'Zuns International Trading PLC',
       image: 'assets/l3.jfif',
+      landing: [
+        {
+          name: 'Zuns International Trading PLC',
+          image: ''
+          
+        }
+      ],
       services: [
         {
           name: 'Metal sales',
@@ -26,8 +34,15 @@ export class DetailService {
     },
     {
       id: 2,
-      name: 'Zuns International Trading PLC',
+      name: 'Shire Shanghai Industrial and Trading PLC',
       image: 'assets/l2.jfif',
+      landing:[
+        {
+          name: 'Shire Shanghai Industrial and Trading PLC',
+          image: ''
+          
+        }
+      ],
       services: [
         {
           name: 'Metal sales',
@@ -45,6 +60,13 @@ export class DetailService {
       id: 3,
       name: 'Zuns Goods Wholesalers Co. LLC',
       image: 'assets/l1.jfif',
+      landing:[
+        {
+          name: 'Zuns Goods Wholesalers Co. LLC',
+          image: ''
+          
+        }
+      ],
       services: [
         {
           name: 'Metal sales',
@@ -77,10 +99,20 @@ export class DetailService {
     return this.companies[id - 1].products;
 
   }
+
+  getCompanyLanding(id: number){
+    return this.companies[id-1].landing;
+  }
 }
 
 
 export interface Service {
+  name: string;
+  image: string;
+  description?: string;
+
+}
+export interface Landing {
   name: string;
   image: string;
   description?: string;
