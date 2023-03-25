@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { AboutModule } from './modules/about/about.module';
 import { FooterModule } from './modules/footer/footer.module';
+import { GroupModule } from './modules/group/group.module';
 import { LandingModule } from './modules/landing/landing.module';
 import { NavbarModule } from './modules/navbar/navbar.module';
 
@@ -24,7 +25,8 @@ import { ServicesModule } from './modules/services/services.module';
     LandingModule,
     ProductsModule,
     ServicesModule,
-    AboutModule
+    AboutModule,
+    GroupModule
   ],
   providers: [],
   bootstrap: [AppComponent]
