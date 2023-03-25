@@ -8,7 +8,13 @@
         </div>
         <div class="carousel-item">
             <img class="h-48 w-48" src="assets/l3.jfif" alt="Burger" />
+
+<div class="flex items-center justify-center mb-4 h-fit">
+    <div class="carousel rounded-box h-fit">
+        <div class="carousel-item mr-4 cursor-pointer" *ngFor="let company of companies" (click)="detail(company.id)">
+            <app-logo-card [image]="company.image" [name]="company.name"> </app-logo-card>
         </div>
+
 
     </div>
 
