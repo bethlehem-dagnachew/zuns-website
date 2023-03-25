@@ -1,41 +1,10 @@
 <app-navbar></app-navbar>
 
 <!-- landing -->
-<div class="flex flex-col items-center mb-[7rem] justify-center h-screen -mt-20 w-[100%]" id="landing">
-
-    <div class="welcome mb-4">
-        <h3 class="text-4xl font-bold  text-[56px] text-center">Welcome to <span *ngFor="let service of services" class="text-[#891FF2] font-bold"> {{service.name }}</span>
-        </h3><br>
-    </div>
-
-    <div class=" w-full max-w-4xl flex flex-col gap-12 ">
-        <p class="text-center p-4 bg-white/70 z-10 sm:z-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut
-            consequatur
-            beatae iusto,
-            delectus reprehenderit
-            ratione sunt quis sed soluta similique ad perspiciatis natus quae suscipit commodi, neque deleniti. Aperiam,
-            voluptates! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis ducimus ratione iusto
-            debitis illo accusamus magni magnam rem a sunt?</p>
-
-        <button
-            class="bg-wine w-48 text-white rounded-full p-2 px-4  text-center self-center focus:outline-none focus:ring focus:ring-violet-300 ">Contact
-            us </button>
+<app-landing [color]="color" [landingText]="landing.name"></app-landing>
+<app-services [services]="services"></app-services>
+<app-products [products]="products"></app-products>
 
 
-    </div>
-    <div class="top-pic absolute left-0 top-48">
-        <img class="h-[193px] w-[120px] object-cover rounded-r-xl" src="assets/p1.svg" alt="">
-    </div>
-    <div class="top-pic absolute right-0 top-80">
-        <img class="h-[193px] w-[120px] object-cover rounded-l-xl" src="assets/p3.svg" alt="">
-    </div>
-
-
-</div>
-<!-- end landing -->
-
-<div class="flex">
-    <p *ngFor="let lander of landing"> {{lander.name }}</p>
-</div>
 
 <app-footer></app-footer>

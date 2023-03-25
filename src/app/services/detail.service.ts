@@ -9,19 +9,23 @@ export class DetailService {
   companies: Company[] = [
     {
       id: 1,
-      
+      color: '#FF0000',
       name: 'Zuns International Trading PLC',
       image: 'assets/l3.jfif',
-      landing: [
-        {
-          name: 'Zuns International Trading PLC',
-          image: ''
-          
-        }
-      ],
+      landing:
+      {
+        name: 'Zuns International Trading PLC',
+        image: ''
+
+      }
+      ,
       services: [
         {
           name: 'Metal sales',
+          image: ''
+        },
+        {
+          name: 'Plastic Bag Manufacturing',
           image: ''
         }
       ],
@@ -29,23 +33,32 @@ export class DetailService {
         {
           name: 'PVC metals and tubes',
           image: ''
+        },
+        {
+          name: 'Food Materials',
+          image: ''
         }
       ]
     },
     {
       id: 2,
+      color: '#ffd700',
       name: 'Shire Shanghai Industrial and Trading PLC',
       image: 'assets/l2.jfif',
-      landing:[
-        {
-          name: 'Shire Shanghai Industrial and Trading PLC',
-          image: ''
-          
-        }
-      ],
+      landing:
+      {
+        name: 'Shire Shanghai Industrial and Trading PLC',
+        image: ''
+
+      }
+      ,
       services: [
         {
           name: 'Metal sales',
+          image: ''
+        },
+        {
+          name: 'Plastic Manufacturing',
           image: ''
         }
       ],
@@ -58,15 +71,16 @@ export class DetailService {
     },
     {
       id: 3,
+      color: '#00ff00',
       name: 'Zuns Goods Wholesalers Co. LLC',
       image: 'assets/l1.jfif',
-      landing:[
-        {
-          name: 'Zuns Goods Wholesalers Co. LLC',
-          image: ''
-          
-        }
-      ],
+
+      landing: {
+        name: 'Zuns Goods Wholesalers Co. LLC',
+        image: ''
+
+      },
+
       services: [
         {
           name: 'Metal sales',
@@ -86,7 +100,7 @@ export class DetailService {
   constructor() { }
 
   getCompanies() {
-    return this.companies
+    return this.companies;
   }
 
   getCompanyServices(id: number) {
@@ -100,8 +114,12 @@ export class DetailService {
 
   }
 
-  getCompanyLanding(id: number){
-    return this.companies[id-1].landing;
+  getCompanyLanding(id: number) {
+    return this.companies[id - 1].landing;
+  }
+
+  getCompanyColor(id: number) {
+    return this.companies[id - 1].color
   }
 }
 

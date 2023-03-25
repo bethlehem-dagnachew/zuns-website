@@ -9,8 +9,9 @@ import { DetailService, Product, Service, Landing } from 'src/app/services/detai
 })
 export class DetailComponent implements OnInit {
   services: any = [];
-  poducts: any = [];
-  landing: any =[];
+  products: any = [];
+  landing: any;
+  color: any;
   constructor(private route: ActivatedRoute, private detailService: DetailService) {
 
   }
@@ -18,8 +19,10 @@ export class DetailComponent implements OnInit {
   ngOnInit(): void {
     this.landing = this.detailService.getCompanyLanding(this.route.snapshot.params['id'])
     console.log(this.route.snapshot.params['id'])
+    this.color = this.detailService.getCompanyColor(this.route.snapshot.params['id'])
+    console.log(this.landing)
     this.services = this.detailService.getCompanyServices(this.route.snapshot.params['id'])
-    this.poducts = this.detailService.getCompanyProducts(this.route.snapshot.params['id'])
+    this.products = this.detailService.getCompanyProducts(this.route.snapshot.params['id'])
 
     console.log(this.services)
     console.log(this.services)

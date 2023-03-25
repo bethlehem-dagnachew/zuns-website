@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { Product } from 'src/app/services/detail.service';
 
 @Component({
   selector: 'app-products',
@@ -6,5 +7,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./products.component.scss']
 })
 export class ProductsComponent {
+
+  @Input() products: Product[] = []
 
 }

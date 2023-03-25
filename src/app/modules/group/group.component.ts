@@ -30,8 +30,8 @@ export interface Company {
   id: number;
   name: string;
   image: string;
-  landing?: Landing[]
+  landing?: Landing
   services: Service[]
-  products: Product[]
+  products: Product[];
+  color?: string;
 }
-  
