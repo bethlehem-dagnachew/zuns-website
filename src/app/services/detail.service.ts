@@ -22,11 +22,11 @@ export class DetailService {
       services: [
         {
           name: 'Importer',
-          image: ''
+          image: 'assets/product/import.jpeg'
         },
         {
           name: 'Wholesaler for metalsheets, Chemicals and steel',
-          image: ''
+          image: 'assets/product/wholesaler.jpeg'
         }
       ],
       products: [

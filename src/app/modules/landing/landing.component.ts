@@ -27,19 +27,19 @@ export class LandingComponent implements OnInit {
 
     switch (this.color) {
       case '1':
-        return `bg-[#ffd700]`;
+        return `bg-[#9333ea]`;
         break;
       case '2':
-        return `bg-[#FF0000]`;
+        return `bg-[#f2d172]`;
         break;
       case '3':
-        return `bg-[#00ff00]`;
+        return `bg-[#ed2647]`;
         break;
 
 
     }
 
-    return `bg-wine`
+    return `bg-[#6dc241]`
 
 
   }
@@ -48,22 +48,22 @@ export class LandingComponent implements OnInit {
 
     switch (this.color) {
       case '1':
-        return `text-[#ffd700]`
+        return `text-[#9333ea]`
 
         break;
       case '2':
-        return `text-[#FF0000]`
+        return `text-[#f2d172]`
 
         break;
       case '3':
-        return `text-[#00ff00]`
+        return `text-[#ed2647]`
 
         break;
 
 
     }
 
-    return `text-wine`
+    return `text-[#6dc241]`
 
   }
   // Call me if there's any problem :-)
