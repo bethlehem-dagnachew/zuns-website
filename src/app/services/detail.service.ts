@@ -21,22 +21,26 @@ export class DetailService {
       ,
       services: [
         {
-          name: 'Metal sales',
+          name: 'Importer',
           image: ''
         },
         {
-          name: 'Plastic Bag Manufacturing',
+          name: 'Wholesaler for metalsheets, Chemicals and steel',
           image: ''
         }
       ],
       products: [
         {
-          name: 'PVC metals and tubes',
-          image: ''
+          name: 'Metalsheets',
+          image: 'assets/product/product5.jpeg'
         },
         {
-          name: 'Food Materials',
-          image: ''
+          name: 'Chemicals',
+          image: 'assets/chemicals.jfif'
+        },
+        {
+          name: 'Steel',
+          image: 'assets/product/product3.jpeg'
         }
       ]
     },
@@ -54,18 +58,39 @@ export class DetailService {
       ,
       services: [
         {
-          name: 'Metal sales',
-          image: ''
+          name: 'Plastic Manufacturing',
+          image: 'assets/plastic.jfif'
         },
         {
-          name: 'Plastic Manufacturing',
-          image: ''
-        }
+          name: 'PP Bags and plastic recycling',
+          image: 'assets/ppbag.jfif'
+        },
+        {
+          name: 'Minning',
+          image: 'assets/gold.jfif'
+        },
+        {
+          name: 'Granite Exports',
+          image: "assets/granite.jfif"
+        },
+
+
       ],
       products: [
         {
-          name: 'PVC metals and tubes',
-          image: ''
+          name: 'PP Bags',
+          image: 'assets/ppbag.jfif'
+        },
+        {
+          name: 'Granite',
+          image: 'assets/granite.jfif'
+        },
+        {
+          name: 'Animal Feed',
+          image: "assets/animal.jfif"
+        }, {
+          name: 'Animal Arbiter',
+          image: "assets/arbiter.jfif"
         }
       ]
     },
@@ -83,14 +108,34 @@ export class DetailService {
 
       services: [
         {
-          name: 'Metal sales',
-          image: ''
+          name: 'International Trading',
+          image: 'assets/international.jfif'
+        },
+        {
+          name: 'Import Export',
+          image: 'assets/import.jfif'
+        },
+        {
+          name: 'Logistics',
+          image: 'assets/logistics.jfif'
+        },
+        {
+          name: 'Wholesaler for wheat sugar and oil',
+          image: 'assets/wholesaler.jfif'
         }
       ],
       products: [
         {
-          name: 'PVC metals and tubes',
-          image: ''
+          name: 'Wheat Products',
+          image: 'assets/wheat.jfif'
+        },
+        {
+          name: 'Oil Products',
+          image: 'assets/oil.jfif'
+        },
+        {
+          name: 'Sugar Products',
+          image: 'assets/sugar.jfif'
         }
       ]
     }

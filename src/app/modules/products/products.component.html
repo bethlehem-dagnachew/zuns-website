@@ -11,7 +11,7 @@
             <div *ngFor="let product of products"
                 class="max-w-sm mb-10 bg-white  border-white-200 rounded-lg shadow transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:text- white duration-300">
                 <a href="#">
-                    <img class="rounded-t-lg h-[20rem] w-[100%]" src="assets/product/product3.jpeg" alt="" />
+                    <img class="rounded-t-lg h-[20rem] w-[100%]" [src]="product.image" alt="" />
                 </a>
                 <div class="p-5">
                     <a href="#">
