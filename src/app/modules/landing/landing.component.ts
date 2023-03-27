@@ -24,12 +24,47 @@ export class LandingComponent implements OnInit {
 
   getColor() {
     console.log(this.color, "is the color ")
-    return `bg-[${this.color}]`
+
+    switch (this.color) {
+      case '1':
+        return `bg-[#ffd700]`;
+        break;
+      case '2':
+        return `bg-[#FF0000]`;
+        break;
+      case '3':
+        return `bg-[#00ff00]`;
+        break;
+
+
+    }
+
+    return `bg-wine`
+
 
   }
   // right here we have to fix this part to make the color dynmic it actually console.log right but it's not assigning it to the div text
   getTextColor() {
-    return `text-[${this.color}]`
+
+    switch (this.color) {
+      case '1':
+        return `text-[#ffd700]`
+
+        break;
+      case '2':
+        return `text-[#FF0000]`
+
+        break;
+      case '3':
+        return `text-[#00ff00]`
+
+        break;
+
+
+    }
+
+    return `text-wine`
+
   }
   // Call me if there's any problem :-)
 

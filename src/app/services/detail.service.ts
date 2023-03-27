@@ -9,7 +9,7 @@ export class DetailService {
   companies: Company[] = [
     {
       id: 1,
-      color: '#FF0000',
+      color: '1',
       name: 'Zuns International Trading PLC',
       image: 'assets/l3.jfif',
       landing:
@@ -46,7 +46,7 @@ export class DetailService {
     },
     {
       id: 2,
-      color: '#ffd700',
+      color: '2',
       name: 'Shire Shanghai Industrial and Trading PLC',
       image: 'assets/l4.jpeg',
       landing:
@@ -96,7 +96,7 @@ export class DetailService {
     },
     {
       id: 3,
-      color: '#00ff00',
+      color: '2',
       name: 'Zuns Goods Wholesalers Co. LLC',
       image: 'assets/l1.jfif',
 
