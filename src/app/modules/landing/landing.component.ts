@@ -9,8 +9,7 @@ export class LandingComponent implements OnInit {
 
   @Input() landingText: string = 'Zuns Business Group';
   @Input() color: string = 'greenwood';
-  @Input() description: string = `Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut
-  consequatur
+  @Input() description: string = `Lorem ipsum dolor sit amet consectetur adipisicing elit. Autconsequatur
   beatae iusto,
   delectus reprehenderit
   ratione sunt quis sed soluta similique ad perspiciatis natus quae suscipit commodi, neque deleniti. Aperiam,

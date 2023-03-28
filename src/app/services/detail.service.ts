@@ -96,7 +96,7 @@ export class DetailService {
     },
     {
       id: 3,
-      color: '2',
+      color: '3',
       name: 'Zuns Goods Wholesalers Co. LLC',
       image: 'assets/l1.jfif',
 
