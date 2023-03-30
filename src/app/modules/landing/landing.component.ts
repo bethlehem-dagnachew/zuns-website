@@ -9,12 +9,9 @@ export class LandingComponent implements OnInit {
 
   @Input() landingText: string = 'Zuns Business Group';
   @Input() color: string = 'greenwood';
-  @Input() description: string = `Lorem ipsum dolor sit amet consectetur adipisicing elit. Autconsequatur
-  beatae iusto,
-  delectus reprehenderit
-  ratione sunt quis sed soluta similique ad perspiciatis natus quae suscipit commodi, neque deleniti. Aperiam,
-  voluptates! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis ducimus ratione iusto
-  debitis illo accusamus magni magnam rem a sunt`
+  @Input() description: string = `
+ Zuns Business Group is a group of three members who are working together to provide the best services and products to the people of Pakistan. We are working on the following services and products.
+`
 
   ngOnInit() {
     console.log(this.color)
@@ -68,3 +65,4 @@ export class LandingComponent implements OnInit {
   // Call me if there's any problem :-)
 
 }
+
